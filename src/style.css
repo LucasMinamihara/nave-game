@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#telaDoJogo {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.nave {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+.tiro {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  display: none;
+}
