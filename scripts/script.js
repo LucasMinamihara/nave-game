@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", startGame);
 
 function startGame() {
+  // let enemyLife = 3;
   const telaDoJogo = document.querySelector("#telaDoJogo");
   const nave = document.querySelector(".nave");
   const tiro = document.querySelector(".tiro");
-  const inimigos = `<div class="inimigos"></div>`;
+  const inimigo = document.querySelector(".inimigo");
   let positionTopBottom = 0;
   let positionLeftRight = 0;
   window.addEventListener("keydown", (e) => {
-    console.log(e.key);
     if (e.key == " ") {
       tiro.style.display = "block";
       setTimeout(() => {
@@ -35,11 +35,14 @@ function startGame() {
       nave.style.left = positionLeftRight + "px";
     }
   });
-  // Spawn de inimigos
-  setInterval(() => {
-    
-    let topAleatorio = Math.random() * 1000;
-    let leftAleatorio = Math.random() * 1000;
-    telaDoJogo.insertAdjacentElement(inimigos);
-  }, 20000);
+
+
+  // setInterval(() => {
+  //   let topAleatorio = Math.random() * 1000;
+  //   let leftAleatorio = Math.random() * 1000;
+  //   inimigo.style.left = leftAleatorio + "px";
+  //   inimigo.style.top = topAleatorio + "px";
+  // }, 10);
+
+  // Enemy life
 }
