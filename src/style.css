@@ -11,6 +11,7 @@
   border: 5px solid red;
   animation: borderAnimation 0.5s infinite;
 }
+
 @keyframes borderAnimation {
   0% {
     border: 5px solid red;
@@ -26,9 +27,11 @@
   height: 100px;
   transition-duration: 0.5s;
 }
+
 .virarNave {
   transform: rotate(180deg);
 }
+
 .tiro {
   width: 30px;
   height: 30px;
@@ -40,6 +43,7 @@
   right: -30px;
   animation: tiroAnimacao 0.1s forwards ease;
 }
+
 @keyframes tiroAnimacao {
   0% {
     top: -30px;
