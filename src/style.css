@@ -41,7 +41,7 @@
   position: absolute;
   top: -30px;
   right: -30px;
-  animation: tiroAnimacao 0.1s forwards ease;
+  animation: tiroAnimacao 1s forwards ease;
 }
 
 @keyframes tiroAnimacao {
